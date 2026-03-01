@@ -1,7 +1,12 @@
+"use client";
+
+import HeroSection from "./HeroSection";
+
 const HomeContent = () => {
     return (
         <div>
-            hello world
+            <HeroSection /> 
+           
         </div>
     )
 }

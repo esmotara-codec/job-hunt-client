@@ -1,10 +1,17 @@
 import type { Metadata } from "next";
 import { Epilogue } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const epilogue = Epilogue({
   variable: "--font-epilogue",
   subsets: ["latin"],
+});
+
+const clashDisplay = localFont({
+  src: "../fonts/ClashDisplay-Variable.woff2",
+  variable: "--font-clash-display",
+  weight: "200 700",
 });
 
 export const metadata: Metadata = {
@@ -20,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${epilogue.variable} antialiased`}
+        className={`${epilogue.variable} ${clashDisplay.variable} antialiased`}
       >
         {children}
       </body>
