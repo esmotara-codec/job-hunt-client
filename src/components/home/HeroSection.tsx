@@ -28,27 +28,32 @@ export default function HeroSection() {
                             {/* brushstroke underline */}
                             <div className="mt-1 mb-3">
                                 <svg
-                                    viewBox="0 0 260 30"
+                                    viewBox="0 0 260 28"
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
                                     className="w-[220px] sm:w-[260px] h-6"
                                 >
+                                    {/* Main stroke */}
                                     <path
                                         d="M4 14 C 40 6, 100 18, 160 10 S 230 16, 256 12"
                                         stroke="#26A4FF"
                                         strokeWidth="5"
                                         strokeLinecap="round"
                                     />
+
+                                    {/* Slightly lower overlapping stroke */}
                                     <path
-                                        d="M8 18 C 50 10, 110 20, 170 12 S 235 18, 255 14"
-                                        stroke="#1D9BF0"
+                                        d="M6 17 C 42 9, 102 20, 162 13 S 232 18, 254 15"
+                                        stroke="#26A4FF"
                                         strokeWidth="4"
                                         strokeLinecap="round"
-                                        opacity="0.8"
+                                        opacity="0.85"
                                     />
+
+                                    {/* Very subtle third stroke */}
                                     <path
-                                        d="M6 20 C 45 12, 105 22, 165 14 S 228 20, 250 16"
-                                        stroke="#26A4FF"
+                                        d="M5 19 C 38 11, 98 22, 158 15 S 225 20, 248 17"
+                                        stroke="#1D9BF0"
                                         strokeWidth="3"
                                         strokeLinecap="round"
                                         opacity="0.6"
@@ -156,27 +161,37 @@ export default function HeroSection() {
 
 
                     {/* Right — Hero Image */}
-                    <div className="relative flex justify-center md:justify-end items-end hidden md:flex">
-                        {/* background behind person */}
-                        <div className="absolute inset-0 bottom-10 -translate-y-10 w-[340px] h-[420px] lg:w-[1000px] lg:h-[900px]">
-                            <Image src="/pattern.png"
-                                alt="square"
+
+                    <div className="relative hidden md:flex justify-end items-end">
+
+                        {/* ── Pattern background — centered behind person, slightly up & right ── */}
+                        <div className="absolute right-[-10px] left-[-10px] lg:right-[-80px] top-1/2  -translate-x-[10%] -translate-y-[80%] w-[420px] h-[420px] lg:w-[580px] lg:h-[580px] z-0 pointer-events-none"
+                        >
+                            <Image
+                                src="/pattern.png"
+                                alt="background pattern"
                                 width={600}
-                                height={900}
-                                className="object-contain relative  w-full h-full"
-                                priority />
+                                height={600}
+                                className="w-full h-full object-contain"
+                                priority
+                            />
                         </div>
-                        {/* THe person image */}
-                        <div className="relative  w-[340px] h-[420px] lg:w-[500px] lg:h-[710px]">
+
+                        {/* ── Person image — sits in front of pattern ── */}
+                        <div className="relative z-10
+    w-[320px] h-[420px]
+    lg:w-[480px] lg:h-[640px]"
+                        >
                             <Image
                                 src="/banner_img.png"
                                 alt="Job Seeker"
                                 width={600}
                                 height={900}
-                                className="object-contain relative  w-full h-full"
+                                className="w-full h-full object-contain object-bottom"
                                 priority
                             />
                         </div>
+
                     </div>
                 </div>
             </Container>
