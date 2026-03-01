@@ -61,10 +61,10 @@ export default function Footer() {
         <footer className="w-full bg-[#1A1A2E]">
             <Container>
                 {/* ── Top Section ── */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 py-14">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 py-14">
 
                     {/* ── Col 1: Brand ── */}
-                    <div className="flex flex-col gap-5">
+                    <div className="flex flex-col gap-5 col-span-2 lg:col-span-1">
                         {/* Logo */}
                         <div className="flex items-center gap-2">
                             <div className="w-8 h-8 rounded-full bg-[#5D5FEF] flex items-center justify-center shadow-md shadow-[#5D5FEF]/30">
@@ -82,7 +82,7 @@ export default function Footer() {
                         </div>
 
                         {/* Tagline */}
-                        <p className="text-[#8888AA] text-sm leading-relaxed">
+                        <p className="text-[#8888AA] text-sm leading-relaxed max-w-xs">
                             Great platform for the job seeker that passionate about startups. Find your dream job easier.
                         </p>
                     </div>
@@ -122,7 +122,7 @@ export default function Footer() {
                     </div>
 
                     {/* ── Col 4: Newsletter ── */}
-                    <div className="flex flex-col gap-4">
+                    <div className="flex flex-col gap-4 col-span-2 lg:col-span-1">
                         <h4 className="text-white font-semibold text-[15px]">
                             Get job notifications
                         </h4>

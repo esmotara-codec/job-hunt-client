@@ -4,11 +4,11 @@ import Container from "../common/Container";
 
 export default function CompaniesSection() {
     const companies = [
-        { name: "vodafone", logo: "/company_logo/vodafone-2017-logo.png", width: 140, height: 40 },
-        { name: "intel", logo: "/company_logo/intel-3.png", width: 80, height: 40 },
-        { name: "tesla", logo: "/company_logo/tesla-9 1.png", width: 100, height: 30 },
-        { name: "amd", logo: "/company_logo/amd-logo-1.png", width: 80, height: 40 },
-        { name: "talkit", logo: "/company_logo/talkit 1.png", width: 100, height: 40 },
+        { name: "vodafone", logo: "/company_logo/vodafone-2017-logo.png", width: 40, height: 40 },
+        { name: "intel", logo: "/company_logo/intel-3.png", width: 40, height: 40 },
+        { name: "tesla", logo: "/company_logo/tesla-9 1.png", width: 40, height: 30 },
+        { name: "amd", logo: "/company_logo/amd-logo-1.png", width: 40, height: 40 },
+        { name: "talkit", logo: "/company_logo/talkit 1.png", width: 40, height: 40 },
     ];
 
     return (
