@@ -28,7 +28,7 @@ export default function CompaniesSection() {
                                 alt={`${company.name} logo`}
                                 width={company.width}
                                 height={company.height}
-                                className="h-5 md:h-8 w-auto object-contain grayscale opacity-60 hover:grayscale-2 hover:opacity-100 transition-all"
+                                className="h-5 md:h-8 w-auto object-contain grayscale opacity-100 hover:grayscale-0 hover:opacity-100 transition-all"
                             />
                         </div>
                     ))}
